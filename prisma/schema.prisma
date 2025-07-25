@@ -1,0 +1,76 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  admin 
+  member
+}
+
+enum TaskStatus {
+  pending
+  in_progress
+  completed
+}
+
+enum TaskPriority {
+  high
+  medium
+  low
+}
+
+model User {
+  id String @id @default(uuid())
+  memberTeam TeamsMembers[]
+  taskAssigned Tasks[]
+  name String
+  email String
+  password String
+  role UserRole @default(member)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime? @updatedAt @map("updated_at")
+  @@map("users")
+}
+
+model Teams {
+  id String @id @default(uuid())
+  member TeamsMembers[]
+  taskTeam Tasks[]
+  name String
+  description String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime? @updatedAt @map("updated_at")
+
+  @@map("teams")
+}
+
+model TeamsMembers {
+  id String @id @default(uuid())
+  userId String @map("user_id")
+  user User @relation(fields: [userId], references: [id])
+  teamId String @map("team_id")
+  team Teams @relation(fields: [teamId],references: [id])
+  createdAt DateTime @default(now()) @map("created_at")
+  @@map("teams_members")
+}
+
+model Tasks {
+  id String @id @default(uuid())
+  title String
+  description String
+  status TaskStatus @default(pending)
+  priority TaskPriority @default(low)
+  assignedToId String @map("assigned_to")
+  user User @relation(fields: [assignedToId], references: [id])
+  teamId String @map("team_id")
+  team Teams @relation(fields: [teamId], references: [id])
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime? @updatedAt @map("updated_at")
+
+  @@map("tasks")
+}
