@@ -26,6 +26,12 @@ export function ensureAuthenticated(
       token,
       authConfig.jwt.secret
     ) as TokenPayload;
+
+    request.user = {
+      id: user_id,
+      role: role as "admin" | "member",
+    };
+
     return next();
   } catch (error) {
     throw new AppError("JWT token invalid", 401);
