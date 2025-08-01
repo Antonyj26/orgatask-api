@@ -17,10 +17,10 @@ export function ensureAuthenticated(
     const authHeader = request.headers.authorization;
 
     if (!authHeader) {
-      throw new AppError("JWT token is missing", 401);
+      throw new AppError("JWT token not found", 401);
     }
 
-    const [, token] = authHeader?.split("");
+    const [, token] = authHeader?.split(" ");
 
     const { role, sub: user_id } = verify(
       token,
