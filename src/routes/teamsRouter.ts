@@ -9,3 +9,6 @@ const teamsController = new TeamsController();
 teamsRoutes.use(ensureAuthenticated, verifyUserAuthorization(["admin"]));
 teamsRoutes.post("/", teamsController.create);
 teamsRoutes.get("/", teamsController.index);
+teamsRoutes.get("/:team_id", teamsController.show);
+teamsRoutes.patch("/:team_id", teamsController.update);
+teamsRoutes.delete("/:team_id", teamsController.remove);

@@ -6,7 +6,10 @@ import { Router } from "express";
 const usersRoutes = Router();
 const usersController = new UsersController();
 
-usersRoutes.use(ensureAuthenticated, verifyUserAuthorization(["admin"]));
+usersRoutes.use(
+  ensureAuthenticated,
+  verifyUserAuthorization(["admin", "member"])
+);
 usersRoutes.post("/", usersController.create);
 
 export { usersRoutes };
