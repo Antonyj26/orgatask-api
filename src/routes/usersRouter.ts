@@ -6,10 +6,27 @@ import { Router } from "express";
 const usersRoutes = Router();
 const usersController = new UsersController();
 
-usersRoutes.use(
-  ensureAuthenticated,
-  verifyUserAuthorization(["admin", "member"])
+usersRoutes.use(ensureAuthenticated);
+usersRoutes.post(
+  "/",
+  verifyUserAuthorization(["admin", "member"]),
+  usersController.create
 );
-usersRoutes.post("/", usersController.create);
+usersRoutes.get("/", verifyUserAuthorization(["admin"]), usersController.index);
+usersRoutes.get(
+  "/:user_id",
+  verifyUserAuthorization(["admin"]),
+  usersController.show
+);
+usersRoutes.patch(
+  "/:user_id",
+  verifyUserAuthorization(["admin"]),
+  usersController.updated
+);
+usersRoutes.delete(
+  "/:user_id",
+  verifyUserAuthorization(["admin"]),
+  usersController.remove
+);
 
 export { usersRoutes };
