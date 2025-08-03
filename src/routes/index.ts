@@ -9,4 +9,4 @@ export const route = Router();
 route.use("/users", usersRoutes);
 route.use("/sessions", sessionsRoutes);
 route.use("/teams", teamsRoutes);
-route.use("/teams", teamsMembersRoutes);
+route.use("/teams-members", teamsMembersRoutes);

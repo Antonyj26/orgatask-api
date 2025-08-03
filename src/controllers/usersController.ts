@@ -97,7 +97,9 @@ class UsersController {
 
     const { user_id } = paramsSchema.parse(request.params);
 
-    if (!user_id) {
+    const user = prisma.user.findUnique({ where: { id: user_id } });
+
+    if (!user) {
       throw new AppError("User not found", 404);
     }
 
