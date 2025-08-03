@@ -1,4 +1,4 @@
-import { UsersController } from "@/controllers/usersController";
+import { UsersController } from "@/controllers/UsersController";
 import { ensureAuthenticated } from "@/middlewares/ensureAuthenticated";
 import { verifyUserAuthorization } from "@/middlewares/verifyUserAuthorization";
 import { Router } from "express";
