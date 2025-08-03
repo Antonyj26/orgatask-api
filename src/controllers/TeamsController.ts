@@ -92,6 +92,27 @@ class TeamsController {
 
     return response.status(200).json({ message: "Team has been deleted" });
   }
+
+  async listWithMembers(request: Request, response: Response) {
+    const teams = await prisma.teams.findMany({
+      include: {
+        member: {
+          select: {
+            id: true,
+            user: {
+              select: {
+                name: true,
+                email: true,
+                role: true,
+              },
+            },
+          },
+        },
+      },
+    });
+
+    return response.json(teams);
+  }
 }
 
 export { TeamsController };
