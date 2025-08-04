@@ -7,7 +7,7 @@ const teamsMembersRoutes = Router();
 const teamsMembersController = new TeamsMembersController();
 
 teamsMembersRoutes.use(ensureAuthenticated, verifyUserAuthorization(["admin"]));
-teamsMembersRoutes.post("/", teamsMembersController.add);
+teamsMembersRoutes.post("/:team_id/members", teamsMembersController.add);
 teamsMembersRoutes.delete(
   "/:team_id/members/:user_id",
   verifyUserAuthorization(["admin"]),
