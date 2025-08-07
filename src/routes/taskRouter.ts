@@ -1,0 +1,16 @@
+import { Router } from "express";
+import { TaskController } from "@/controllers/TasksController";
+import { ensureAuthenticated } from "@/middlewares/ensureAuthenticated";
+import { verifyUserAuthorization } from "@/middlewares/verifyUserAuthorization";
+
+const taskRoutes = Router();
+const taskController = new TaskController();
+
+taskRoutes.use(ensureAuthenticated);
+taskRoutes.post(
+  "/:team_id/:user_id",
+  verifyUserAuthorization(["admin"]),
+  taskController.create
+);
+
+export { taskRoutes };
