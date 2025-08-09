@@ -18,5 +18,10 @@ taskRoutes.get(
   verifyUserAuthorization(["admin"]),
   taskController.show
 );
+taskRoutes.patch(
+  "/:task_id",
+  verifyUserAuthorization(["admin", "member"]),
+  taskController.update
+);
 
 export { taskRoutes };

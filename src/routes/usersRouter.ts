@@ -21,7 +21,7 @@ usersRoutes.get(
 usersRoutes.patch(
   "/:user_id",
   verifyUserAuthorization(["admin"]),
-  usersController.updated
+  usersController.update
 );
 usersRoutes.delete(
   "/:user_id",

@@ -57,7 +57,7 @@ class UsersController {
     return response.json(user);
   }
 
-  async updated(request: Request, response: Response) {
+  async update(request: Request, response: Response) {
     const paramsSchema = z.object({
       user_id: z.string().uuid(),
     });

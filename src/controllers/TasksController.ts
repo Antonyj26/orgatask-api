@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import { prisma } from "@/database/prisma";
 import { z } from "zod";
 import { AppError } from "@/utils/AppError";
+import { title } from "process";
 
 class TaskController {
   async create(request: Request, response: Response) {
@@ -89,10 +90,15 @@ class TaskController {
 
   async update(request: Request, response: Response) {
     const bodySchema = z.object({
-      status: z.enum(["in_progress", "completed"]),
+      title: z.string().optional(),
+      description: z.string().optional(),
+      status: z.enum(["pending", "in_progress", "completed"]).optional(),
+      priority: z.enum(["high", "medium", "low"]).optional(),
     });
 
-    const { status } = bodySchema.parse(request.body);
+    const { title, description, status, priority } = bodySchema.parse(
+      request.body
+    );
 
     const paramsSchema = z.object({
       task_id: z.string().uuid(),
@@ -100,7 +106,34 @@ class TaskController {
 
     const { task_id } = paramsSchema.parse(request.params);
 
-    const task = prisma.tasks.findUnique({ where: { id: task_id } });
+    const task = await prisma.tasks.findUnique({ where: { id: task_id } });
+
+    if (!task) {
+      throw new AppError("Task not found", 404);
+    }
+
+    if (
+      request.user.role !== "admin" &&
+      !(request.user.role === "member" && task.assignedToId === request.user.id)
+    ) {
+      throw new AppError("You do not permission to update this task", 403);
+    }
+
+    const dataToUpdate: any = {};
+
+    if (title !== undefined) dataToUpdate.title = title;
+    if (description !== undefined) dataToUpdate.description = description;
+    if (status !== undefined) dataToUpdate.status = status;
+    if (priority !== undefined) dataToUpdate.priority = priority;
+
+    await prisma.tasks.update({
+      where: { id: task_id },
+      data: dataToUpdate,
+    });
+
+    return response
+      .status(201)
+      .json({ message: "Task has been updated successfully" });
   }
 }
 
