@@ -12,5 +12,11 @@ taskRoutes.post(
   verifyUserAuthorization(["admin"]),
   taskController.create
 );
+taskRoutes.get("/", verifyUserAuthorization(["admin"]), taskController.index);
+taskRoutes.get(
+  "/:task_id",
+  verifyUserAuthorization(["admin"]),
+  taskController.show
+);
 
 export { taskRoutes };

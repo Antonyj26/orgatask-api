@@ -60,6 +60,32 @@ class TaskController {
 
     return response.status(201).json(task);
   }
+
+  async index(request: Request, response: Response) {
+    const tasks = await prisma.tasks.findMany();
+
+    if (!tasks) {
+      throw new AppError("No tasks found", 404);
+    }
+
+    return response.json(tasks);
+  }
+
+  async show(request: Request, response: Response) {
+    const paramsSchema = z.object({
+      task_id: z.string().uuid(),
+    });
+
+    const { task_id } = paramsSchema.parse(request.params);
+
+    const task = await prisma.tasks.findFirst({ where: { id: task_id } });
+
+    if (!task) {
+      throw new AppError("Task not found", 404);
+    }
+
+    return response.json(task);
+  }
 }
 
 export { TaskController };
