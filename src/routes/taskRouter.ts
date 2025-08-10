@@ -15,7 +15,7 @@ taskRoutes.post(
 taskRoutes.get("/", verifyUserAuthorization(["admin"]), taskController.index);
 taskRoutes.get(
   "/:task_id",
-  verifyUserAuthorization(["admin"]),
+  verifyUserAuthorization(["admin", "member"]),
   taskController.show
 );
 taskRoutes.patch(

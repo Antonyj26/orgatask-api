@@ -81,6 +81,13 @@ class TaskController {
 
     const task = await prisma.tasks.findUnique({ where: { id: task_id } });
 
+    if (
+      request.user.role !== "admin" &&
+      !(request.user.role == "member" && task?.assignedToId === request.user.id)
+    ) {
+      throw new AppError("You do not have permission to view this task.", 403);
+    }
+
     if (!task) {
       throw new AppError("Task not found", 404);
     }
