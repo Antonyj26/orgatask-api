@@ -23,5 +23,10 @@ taskRoutes.patch(
   verifyUserAuthorization(["admin", "member"]),
   taskController.update
 );
+taskRoutes.delete(
+  "/:task_id",
+  verifyUserAuthorization(["admin"]),
+  taskController.remove
+);
 
 export { taskRoutes };

@@ -142,6 +142,28 @@ class TaskController {
       .status(201)
       .json({ message: "Task has been updated successfully" });
   }
+
+  async remove(request: Request, response: Response) {
+    const paramsSchema = z.object({
+      task_id: z.string().uuid(),
+    });
+
+    const { task_id } = paramsSchema.parse(request.params);
+
+    const task = await prisma.tasks.findUnique({ where: { id: task_id } });
+
+    if (!task) {
+      throw new AppError("Task not found", 404);
+    }
+
+    if (task?.status === "in_progress" || task.status === "pending") {
+      throw new AppError("Change status to completed");
+    }
+
+    await prisma.tasks.delete({ where: { id: task_id } });
+
+    return response.json({ message: "The task was removed successfully" });
+  }
 }
 
 export { TaskController };
