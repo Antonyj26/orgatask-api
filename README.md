@@ -1,7 +1,13 @@
 🗂️ OrgaTask API
 API RESTful para gerenciamento de tarefas, permitindo que usuários criem contas, autentiquem-se e organizem suas tarefas por status, prioridade e responsável.
 
-Tecnologias Utilizadas
+🚀 Deploy
+A API está hospedada na Render e pode ser acessada pelo link:
+
+https://orgatask-api.onrender.com
+
+🛠 Tecnologias Utilizadas
+
 Node.js
 
 Express.js
@@ -20,19 +26,20 @@ Jest para testes
 
 Docker
 
-🛠 Funcionalidades
- Cadastro de usuário
+📌 Funcionalidades
 
- Login com geração de token JWT
+Cadastro de usuário
 
- CRUD de tarefas
+Login com geração de token JWT
 
- Atribuição de tarefas a usuários
+CRUD de tarefas
 
- Classificação por status e prioridade
+Atribuição de tarefas a usuários
 
- Proteção de rotas para usuários autenticados
+Classificação por status e prioridade
 
- Validação de dados com Zod
+Proteção de rotas para usuários autenticados
 
- Testes automatizados com Jest
+Validação de dados com Zod
+
+Testes automatizados com Jest
