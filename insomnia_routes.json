@@ -1,0 +1,1597 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "Insomnia REST Client",
+      "version": "insomnia.desktop.app:v11.4.0"
+    },
+    "entries": [
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 20.352999999999998,
+        "request": {
+          "method": "DELETE",
+          "url": "http://localhost:3333/tasks/8b0820f5-d54e-4b4b-b108-dd99a7c9f583",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "",
+            "text": ""
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "47"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"2f-1XH3p2HNpIR392+1UdjjTnYnLKg\""
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 10 Aug 2025 02:23:40 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 47,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"message\":\"The task was removed successfully\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 20.352999999999998,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Task Remove"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 30.883,
+        "request": {
+          "method": "PATCH",
+          "url": "http://localhost:3333/tasks/940c11a5-0517-41e2-8770-2277031fd98a",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"status\": \"completed\"\n}"
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 201,
+          "statusText": "Created",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "48"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"30-2lRuwQjlJP2gGzF1O11raNxP7PQ\""
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 10 Aug 2025 02:20:49 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 48,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"message\":\"Task has been updated successfully\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 30.883,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Task Update"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 6.275,
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3333/tasks/8b0820f5-d54e-4b4b-b108-dd99a7c9f583",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "",
+            "text": ""
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "327"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"147-C9sWn/mkcsH7zwifgbzc+EIjQLU\""
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 10 Aug 2025 02:03:45 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 327,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"id\":\"8b0820f5-d54e-4b4b-b108-dd99a7c9f583\",\"title\":\"Projeto B\",\"description\":\"Realizar o Projeto B 1.0\",\"status\":\"completed\",\"priority\":\"medium\",\"assignedToId\":\"defd756c-3233-4f28-ad68-fc1e3863d3ea\",\"teamId\":\"964e62f0-b231-4bf2-ad31-a99186378938\",\"createdAt\":\"2025-08-09T00:44:33.144Z\",\"updatedAt\":\"2025-08-09T17:12:09.767Z\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 6.275,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Task Show"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 7.496,
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3333/tasks",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "",
+            "text": ""
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "648"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"288-jy8cBFSrchZ2RrH62tfzoXzKKRo\""
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 10 Aug 2025 02:23:44 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 648,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "[{\"id\":\"eea4e2fc-66b1-46ff-901a-782a562941e0\",\"title\":\"Projeto A\",\"description\":\"Realizar o Projeto A\",\"status\":\"in_progress\",\"priority\":\"medium\",\"assignedToId\":\"53e0ccd3-a745-4271-b0f6-91efefd4a3ff\",\"teamId\":\"2fb4c50e-ce9a-45b9-aee6-f3830a0f68bc\",\"createdAt\":\"2025-08-07T20:31:18.973Z\",\"updatedAt\":\"2025-08-09T17:06:17.835Z\"},{\"id\":\"940c11a5-0517-41e2-8770-2277031fd98a\",\"title\":\"Projeto B\",\"description\":\"Realizar o Projeto B\",\"status\":\"completed\",\"priority\":\"low\",\"assignedToId\":\"4300ee54-4dd4-4397-878c-710fd95711c3\",\"teamId\":\"964e62f0-b231-4bf2-ad31-a99186378938\",\"createdAt\":\"2025-08-09T00:39:48.620Z\",\"updatedAt\":\"2025-08-10T02:20:49.422Z\"}]"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 7.496,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Tasks Index"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 19.384999999999998,
+        "request": {
+          "method": "POST",
+          "url": "http://localhost:3333/tasks/964e62f0-b231-4bf2-ad31-a99186378938/defd756c-3233-4f28-ad68-fc1e3863d3ea",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"title\": \"Projeto B\",\n\t\"description\": \"Realizar o Projeto B 1.0\"\n}"
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 201,
+          "statusText": "Created",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "322"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"142-2/oPZIVU5Sqr27ccdctCTtA2dDs\""
+            },
+            {
+              "name": "Date",
+              "value": "Sat, 09 Aug 2025 00:44:33 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 322,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"id\":\"8b0820f5-d54e-4b4b-b108-dd99a7c9f583\",\"title\":\"Projeto B\",\"description\":\"Realizar o Projeto B 1.0\",\"status\":\"pending\",\"priority\":\"low\",\"assignedToId\":\"defd756c-3233-4f28-ad68-fc1e3863d3ea\",\"teamId\":\"964e62f0-b231-4bf2-ad31-a99186378938\",\"createdAt\":\"2025-08-09T00:44:33.144Z\",\"updatedAt\":\"2025-08-09T00:44:33.144Z\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 19.384999999999998,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Task Create"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 15.017000000000001,
+        "request": {
+          "method": "POST",
+          "url": "http://localhost:3333/teams",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"name\": \"Time B\",\n\t\"description\": \"Equipe resposável pelo projeto B\"\n}"
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 201,
+          "statusText": "Created",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "189"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"bd-xHi4bppdhTV+xADNnAdxlW/x7zc\""
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 03 Aug 2025 22:46:31 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 189,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"id\":\"964e62f0-b231-4bf2-ad31-a99186378938\",\"name\":\"Time B\",\"description\":\"Equipe resposável pelo projeto B\",\"createdAt\":\"2025-08-03T22:46:31.256Z\",\"updatedAt\":\"2025-08-03T22:46:31.256Z\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 15.017000000000001,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Create Team"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 28.995,
+        "request": {
+          "method": "POST",
+          "url": "http://localhost:3333/users",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.3.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"name\": \"Layla\",\n\t\"email\": \"layla@email.com\",\n\t\"password\": \"123456\"\n}"
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 201,
+          "statusText": "Created",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "180"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"b4-sHKM8b9WRtk13N7ZFKMGoinutm8\""
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 03 Aug 2025 21:05:36 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 180,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"id\":\"4300ee54-4dd4-4397-878c-710fd95711c3\",\"name\":\"Layla\",\"email\":\"layla@email.com\",\"role\":\"member\",\"createdAt\":\"2025-08-03T21:05:36.180Z\",\"updatedAt\":\"2025-08-03T21:05:36.180Z\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 28.995,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Create User"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 7.509,
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3333/users",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "",
+            "text": ""
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "772"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"304-Hey0Icu7j5ecdxQr0bn9F8+KIEo\""
+            },
+            {
+              "name": "Date",
+              "value": "Sat, 09 Aug 2025 00:39:35 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 772,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "[{\"id\":\"53e0ccd3-a745-4271-b0f6-91efefd4a3ff\",\"name\":\"Antony\",\"email\":\"antony@email.com\",\"password\":\"$2b$08$YBNDpR.PqQmvTV0ersw.TeJv6L6Rt3ZBsjYzkVoj9g9GMpSTk/D9K\",\"role\":\"admin\",\"createdAt\":\"2025-07-25T21:03:39.298Z\",\"updatedAt\":\"2025-08-01T22:53:23.307Z\"},{\"id\":\"4300ee54-4dd4-4397-878c-710fd95711c3\",\"name\":\"Layla\",\"email\":\"layla@email.com\",\"password\":\"$2b$08$BNYNfjYcuTVOseMUb4pzpeL1blGIlSanmNumos/zT2L6VpMeY/m7y\",\"role\":\"member\",\"createdAt\":\"2025-08-03T21:05:36.180Z\",\"updatedAt\":\"2025-08-03T21:05:36.180Z\"},{\"id\":\"defd756c-3233-4f28-ad68-fc1e3863d3ea\",\"name\":\"Vitória\",\"email\":\"vitoria@email.com\",\"password\":\"$2b$08$lQTtrhoiMbrDF2NZPJKb4uHpfmAt.IgNxF2JVCjbzkRUOSsmTGpZq\",\"role\":\"member\",\"createdAt\":\"2025-08-01T23:03:55.936Z\",\"updatedAt\":\"2025-08-04T00:02:12.791Z\"}]"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 7.509,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Index Users"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 8.465,
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3333/users/4300ee54-4dd4-4397-878c-710fd95711c3",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "",
+            "text": ""
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "254"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"fe-XUwdPYmE6Fju9PTkfm1+TMpZfYM\""
+            },
+            {
+              "name": "Date",
+              "value": "Mon, 04 Aug 2025 00:01:48 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 254,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"id\":\"4300ee54-4dd4-4397-878c-710fd95711c3\",\"name\":\"Layla\",\"email\":\"layla@email.com\",\"password\":\"$2b$08$BNYNfjYcuTVOseMUb4pzpeL1blGIlSanmNumos/zT2L6VpMeY/m7y\",\"role\":\"member\",\"createdAt\":\"2025-08-03T21:05:36.180Z\",\"updatedAt\":\"2025-08-03T21:05:36.180Z\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 8.465,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Show User"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 14.768,
+        "request": {
+          "method": "PATCH",
+          "url": "http://localhost:3333/users/defd756c-3233-4f28-ad68-fc1e3863d3ea",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"name\": \"Vitória\",\n\t\"email\": \"vitoria@email.com\",\n\t\"role\": \"member\"\n}"
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "36"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"24-uiDs5jPCQhvpckQHJoOpW02AX6o\""
+            },
+            {
+              "name": "Date",
+              "value": "Mon, 04 Aug 2025 00:02:12 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 36,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"message\":\"User has been updated \"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 14.768,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Update User"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 26.648000000000003,
+        "request": {
+          "method": "DELETE",
+          "url": "http://localhost:3333/users/78aeb6e7-cf13-451d-9e3e-428881725939",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "",
+            "text": ""
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "35"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"23-+Vuz+A3WZJP0jlk7FOLtE5djxrk\""
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 03 Aug 2025 20:43:32 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 35,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"message\":\"User has been deleted\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 26.648000000000003,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Remove User"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 21.375,
+        "request": {
+          "method": "POST",
+          "url": "http://localhost:3333/teams-members/964e62f0-b231-4bf2-ad31-a99186378938/members",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"user_id\": \"defd756c-3233-4f28-ad68-fc1e3863d3ea\"\n}"
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "180"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"b4-3ocEOE765Kj3ytladIC+KwxFpuI\""
+            },
+            {
+              "name": "Date",
+              "value": "Sat, 09 Aug 2025 00:44:09 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 180,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"id\":\"b5e2c5ee-351c-478a-b1a3-5cb93f120f2c\",\"userId\":\"defd756c-3233-4f28-ad68-fc1e3863d3ea\",\"teamId\":\"964e62f0-b231-4bf2-ad31-a99186378938\",\"createdAt\":\"2025-08-09T00:44:09.036Z\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 21.375,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Add Team Members"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 15.796999999999999,
+        "request": {
+          "method": "DELETE",
+          "url": "http://localhost:3333/teams-members/2fb4c50e-ce9a-45b9-aee6-f3830a0f68bc/members/defd756c-3233-4f28-ad68-fc1e3863d3ea",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "",
+            "text": ""
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "54"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"36-XX1zzusNAHXDuwPkQE8D75OdYWI\""
+            },
+            {
+              "name": "Date",
+              "value": "Mon, 04 Aug 2025 00:06:03 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 54,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"message\":\"The team member was successfully deleted\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 15.796999999999999,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Remove Member Team"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 4.922000000000001,
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3333/teams",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "",
+            "text": ""
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "381"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"17d-bYHgGKTMbRQaJEADLB2zyWUzXwQ\""
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 03 Aug 2025 22:47:42 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 381,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "[{\"id\":\"2fb4c50e-ce9a-45b9-aee6-f3830a0f68bc\",\"name\":\"Time A\",\"description\":\"Equipe resposável pelo projeto A\",\"createdAt\":\"2025-08-01T23:36:45.722Z\",\"updatedAt\":\"2025-08-01T23:36:45.722Z\"},{\"id\":\"964e62f0-b231-4bf2-ad31-a99186378938\",\"name\":\"Time B\",\"description\":\"Equipe resposável pelo projeto B\",\"createdAt\":\"2025-08-03T22:46:31.256Z\",\"updatedAt\":\"2025-08-03T22:46:31.256Z\"}]"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 4.922000000000001,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Index Teams"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 9.949,
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3333/teams/2fb4c50e-ce9a-45b9-aee6-f3830a0f68bc",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "",
+            "text": ""
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "189"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"bd-1Eh3ewOcgNP8J803KF6cpR82xs8\""
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 03 Aug 2025 20:33:01 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 189,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"id\":\"2fb4c50e-ce9a-45b9-aee6-f3830a0f68bc\",\"name\":\"Time A\",\"description\":\"Equipe resposável pelo projeto A\",\"createdAt\":\"2025-08-01T23:36:45.722Z\",\"updatedAt\":\"2025-08-01T23:36:45.722Z\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 9.949,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Show Team"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 28.910999999999998,
+        "request": {
+          "method": "PATCH",
+          "url": "http://localhost:3333/teams/cab51135-b811-4240-84e9-aa0537073b3a",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"name\": \"Time B\",\n\t\"description\": \"Equipe responsável pelo projeto B\"\n}"
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "35"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"23-1nLNE8kyAzDHLFv/EvrJjWtB3b0\""
+            },
+            {
+              "name": "Date",
+              "value": "Sat, 02 Aug 2025 00:57:26 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 35,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"message\":\"Team has been updated\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 28.910999999999998,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Update Team"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 21.803,
+        "request": {
+          "method": "DELETE",
+          "url": "http://localhost:3333/teams/cab51135-b811-4240-84e9-aa0537073b3a",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "",
+            "text": ""
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "35"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"23-G0wgOXpmjj5TWGH5KhlV6O9xQ90\""
+            },
+            {
+              "name": "Date",
+              "value": "Sat, 02 Aug 2025 01:08:09 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 35,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"message\":\"Team has been deleted\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 21.803,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Remove Team"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 4.959,
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3333/teams/with-members",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.4.0"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "",
+            "text": ""
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 401,
+          "statusText": "Unauthorized",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "26"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"1a-pljHtlo127JYJR4E/RYOPb6ucbw\""
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 10 Aug 2025 02:03:08 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 26,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"message\":\"Unauthorized\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 4.959,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "List With Members"
+      },
+      {
+        "startedDateTime": "2025-08-12T18:46:32.136Z",
+        "time": 1093.525,
+        "request": {
+          "method": "POST",
+          "url": "http://localhost:3333/sessions",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "User-Agent",
+              "value": "insomnia/11.3.0"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"email\": \"antony@email.com\",\n\t\"password\": \"123456\"\n}"
+          },
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Content-Length",
+              "value": "400"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"190-9Oc9DOyhhppjMcwcz3orXDgS2go\""
+            },
+            {
+              "name": "Date",
+              "value": "Tue, 12 Aug 2025 18:13:31 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "content": {
+            "size": 400,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTUwMjI0MTEsImV4cCI6MTc1NTEwODgxMSwic3ViIjoiNTNlMGNjZDMtYTc0NS00MjcxLWIwZjYtOTFlZmVmZDRhM2ZmIn0.AqelwSbZ0ADFh22uae6BICe0CjfRpg8s_4ekBcT1ffk\",\"id\":\"53e0ccd3-a745-4271-b0f6-91efefd4a3ff\",\"name\":\"Antony\",\"email\":\"antony@email.com\",\"role\":\"admin\",\"createdAt\":\"2025-07-25T21:03:39.298Z\",\"updatedAt\":\"2025-08-01T22:53:23.307Z\"}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1
+        },
+        "cache": {},
+        "timings": {
+          "blocked": -1,
+          "dns": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 1093.525,
+          "receive": 0,
+          "ssl": -1
+        },
+        "comment": "Create Session"
+      }
+    ]
+  }
+}
