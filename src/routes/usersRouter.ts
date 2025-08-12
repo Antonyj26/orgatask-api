@@ -6,8 +6,12 @@ import { Router } from "express";
 const usersRoutes = Router();
 const usersController = new UsersController();
 
-usersRoutes.post("/", usersController.create);
 usersRoutes.use(ensureAuthenticated);
+usersRoutes.post(
+  "/",
+  verifyUserAuthorization(["admin", "member"]),
+  usersController.create
+);
 usersRoutes.get("/", verifyUserAuthorization(["admin"]), usersController.index);
 usersRoutes.get(
   "/:user_id",
